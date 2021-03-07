@@ -1,0 +1,31 @@
+#モデル名や各モデルの属性に関する日本語訳をこのファイルにまとめて記述してください。
+ja:
+  activerecord:
+    models:
+      # view側： User.model_name.human => "ユーザ" / t("activerecord.models.user")と同じ
+      user: ユーザー
+      # model毎に定義したいattributesを記述
+      board: '掲示板'
+      comment: 'コメント'
+    attributes:
+        user:
+          id: ID
+          # view側： User.human_attribute_name :name => "名前" /t("activerecord.attributes.user.name")と同じ
+          first_name: 名
+          last_name: 姓
+          full_name: '氏名'
+          avatar_image: 'アバター'
+          email: メールアドレス
+          password: パスワード
+          password_confirmation: パスワード確認
+          crypted_password: パスワード
+        board:
+          title: タイトル
+          body: 本文
+          board_image: サムネイル
+        comment:
+          body: コメント
+  # 全てのmodelで共通して使用するattributesを定義
+  attributes:
+    created_at: 作成日
+    updated_at: 更新日

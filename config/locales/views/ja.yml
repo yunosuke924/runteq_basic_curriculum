@@ -1,0 +1,54 @@
+#ビューに関する日本語訳をこのファイルにまとめて記述してください。
+ja:
+  defaults:
+    login: 'ログイン'
+    register: '登録'
+    logout: 'ログアウト'
+    post: '投稿'
+    search_word: '検索ワード'
+    edit: '編集'
+  users:
+    create:
+      success: 'ユーザー登録が完了しました'
+      fail: 'ユーザー登録に失敗しました'
+    new:
+      title: 'ユーザー登録'
+      to_login_page: 'ログインページへ'
+  user_sessions:
+    create:
+      success: 'ログインしました'
+      fail: 'ログインに失敗しました'
+    destroy:
+      success: 'ログアウトしました'
+    new:
+      email: 'メールアドレス'
+      password: 'パスワード'
+      title: 'ログイン'
+      to_register_page: '登録ページへ'
+      password_forget: 'パスワードをお忘れの方はこちら'
+  boards:
+    index:
+      title: '掲示板一覧'
+    new:
+      title: '掲示板作成'
+      register: '登録する'
+    create:
+      success: '掲示板を作成しました'
+      fail: '掲示板を作成できませんでした'
+    bookmarks:
+      title: 'ブックマーク一覧'
+      no_result: 'ブックマーク中の掲示板がありません。'
+  bookmarks:
+    create:
+      success: 'ブックマークしました'
+    destroy:
+      success: 'ブックマークを外しました'
+  comments:
+    create:
+      success: 'コメントを作成しました'
+      fail: 'コメントを作成できませんでした'
+  profiles:
+    show:
+      title: 'プロフィール'
+    edit:
+      title: 'プロフィール編集'

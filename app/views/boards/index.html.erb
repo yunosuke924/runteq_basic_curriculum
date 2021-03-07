@@ -1,0 +1,25 @@
+<% content_for(:title, '掲示板一覧') %>
+
+<div class="container pt-3">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <!-- 検索フォーム -->
+      <%= render 'search_form', url: boards_path %>
+    </div>
+  </div>
+  <!-- 掲示板一覧 -->
+
+  <div class="row">
+    <div class="col-12">
+      <div class="row">
+          <% if @boards.any? %>
+              <%= render @boards %>
+          <% else %>
+            <p>掲示板がありません</p>
+          <% end %>
+      </div>
+    </div>
+      <%= paginate @boards %>
+  </div>
+</div>
+

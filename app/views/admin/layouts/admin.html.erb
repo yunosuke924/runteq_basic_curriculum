@@ -1,0 +1,27 @@
+<title><%= page_title(yield(:title), admin: true) %></title>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta lang="ja">
+        <meta name="robots" content="noindex, nofollow">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ダッシュボード | RUNTEQ BOARD APP(管理画面)</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <%= stylesheet_link_tag 'admin', media: 'all' %>
+        <%= csrf_meta_tags %>
+    </head>
+
+    <body class="hold-transition sidebar-mini layout-fixed">
+        <div class="wrapper">
+            <%= render 'admin/shared/header' %>
+            <%= render 'admin/shared/sidebar' %>
+            <div class="content-wrapper">
+            <%= render 'shared/flash_message' %>
+                <%= yield %>
+            </div>
+            <%= render 'admin/shared/footer' %>
+            <%= javascript_include_tag 'admin' %>
+        </div>
+    </body>
+</html>
