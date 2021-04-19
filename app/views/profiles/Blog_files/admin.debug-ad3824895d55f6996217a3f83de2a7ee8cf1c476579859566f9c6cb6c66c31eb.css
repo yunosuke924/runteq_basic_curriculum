@@ -1,0 +1,37 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ */
+/* line 16, app/assets/stylesheets/admin.css.scss */
+.image-icon-xs {
+  height: 18px;
+  width: 18px;
+}
+
+/* line 21, app/assets/stylesheets/admin.css.scss */
+.image-icon {
+  height: 128pxx;
+  width: 128px;
+}
+
+/* line 26, app/assets/stylesheets/admin.css.scss */
+.insert-block {
+  padding: 10px;
+}
+
+/* line 30, app/assets/stylesheets/admin.css.scss */
+.box + .insert-block {
+  margin-top: -20px;
+}
+
+/*# sourceMappingURL=admin.css-ac16d3aa9897b573197f8064d792d2ff4b353e1de017c8a1c27f35f03687858e.map */
